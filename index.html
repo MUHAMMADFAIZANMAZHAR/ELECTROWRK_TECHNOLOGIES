@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Electrowerk Technologies | Solar Energy & Electrical Engineering</title>
+    <title>Electrowerk Technologies | Solar EPC & Electrical Engineering Pakistan</title>
 
     <meta name="description"
-          content="Electrowerk Technologies provides Solar EPC, On-Grid, Off-Grid, Hybrid Solar Systems, Electrical Engineering and Automation solutions in Pakistan.">
+          content="Electrowerk Technologies delivers turnkey Solar EPC, CCTV Surveillance, Residential & Commercial Electrical Engineering, Electric Safety Fencing, and Industrial Automation across Pakistan.">
 
     <meta name="keywords"
-          content="Solar Pakistan, Solar Lahore, Solar EPC, On Grid Solar, Off Grid Solar, Hybrid Solar, Electrical Engineering, Electrowerk Technologies">
+          content="Solar Pakistan, Solar Lahore, Solar EPC, CCTV Monitoring Lahore, Electric Safety Fence Pakistan, On Grid Solar, Hybrid Solar, Electrical Engineering, Electrowerk Technologies">
 
     <link rel="icon" type="image/png" href="assets/images/logo.png">
 
@@ -24,1028 +24,45 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <style>
-
-        /* =========================
-           GLOBAL & LOGO COLOR THEME
-           Exact Match with Logo:
-           Deep Navy: #0f223f
-           Electric Blue: #156fe8
-           Charcoal Slate: #2e3b4e
-           Background: #ffffff / #f8fafc
-        ========================= */
-
-        :root {
-            --navy: #0f223f;
-            --dark-navy: #09172c;
-            --electric-blue: #156fe8;
-            --electric-blue-hover: #0b57c2;
-            --electric-light: #eaf3ff;
-            --charcoal: #2e3b4e;
-            --text-dark: #0f223f;
-            --text-body: #334155;
-            --text-muted: #64748b;
-            --white: #ffffff;
-            --surface-light: #f8fafc;
-            --border: #e2e8f0;
-            --border-hover: #156fe8;
-            --shadow-sm: 0 4px 15px rgba(15, 34, 63, 0.05);
-            --shadow-md: 0 12px 35px rgba(15, 34, 63, 0.08);
-            --shadow-lg: 0 20px 45px rgba(15, 34, 63, 0.12);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: var(--white);
-            color: var(--text-body);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1240px;
-            margin: auto;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 14px 26px;
-            border-radius: 8px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-            line-height: 1;
-        }
-
-        .btn-primary {
-            background: var(--electric-blue);
-            color: var(--white);
-            box-shadow: 0 4px 18px rgba(21, 111, 232, 0.3);
-        }
-
-        .btn-primary:hover {
-            background: var(--electric-blue-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(21, 111, 232, 0.45);
-            color: var(--white);
-        }
-
-        .btn-navy {
-            background: var(--navy);
-            color: var(--white);
-            box-shadow: 0 4px 18px rgba(15, 34, 63, 0.25);
-        }
-
-        .btn-navy:hover {
-            background: var(--dark-navy);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(15, 34, 63, 0.35);
-            color: var(--white);
-        }
-
-        .btn-outline {
-            background: var(--white);
-            color: var(--navy);
-            border: 1.5px solid var(--border);
-        }
-
-        .btn-outline:hover {
-            border-color: var(--electric-blue);
-            color: var(--electric-blue);
-            background: var(--electric-light);
-            transform: translateY(-2px);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 55px;
-        }
-
-        .section-title span {
-            color: var(--electric-blue);
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 13px;
-            letter-spacing: 2px;
-            font-family: 'JetBrains Mono', monospace;
-            background: var(--electric-light);
-            padding: 6px 14px;
-            border-radius: 30px;
-            display: inline-block;
-            margin-bottom: 12px;
-        }
-
-        .section-title h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 40px;
-            font-weight: 800;
-            color: var(--navy);
-            margin: 10px 0 15px;
-            letter-spacing: -0.02em;
-        }
-
-        .section-title p {
-            color: var(--text-muted);
-            font-size: 17px;
-            max-width: 680px;
-            margin: auto;
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           TOP BAR
-        ========================= */
-
-        .top-bar {
-            background: var(--navy);
-            color: var(--white);
-            padding: 10px 0;
-            font-size: 13px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        .top-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top-left,
-        .top-right {
-            display: flex;
-            gap: 25px;
-            align-items: center;
-        }
-
-        .top-bar i {
-            color: var(--electric-blue);
-            margin-right: 6px;
-        }
-
-        .top-bar a:hover {
-            color: #60a5fa;
-        }
-
-
-        /* =========================
-           NAVBAR (BRAND LOGO ALIGNED)
-        ========================= */
-
-        nav {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(14px);
-            border-bottom: 1px solid var(--border);
-            box-shadow: 0 2px 10px rgba(15, 34, 63, 0.03);
-        }
-
-        .nav-inner {
-            height: 82px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            text-decoration: none;
-        }
-
-        .logo-img-wrapper {
-            height: 52px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .logo-img-wrapper img {
-            height: 48px;
-            width: auto;
-            object-fit: contain;
-        }
-
-        .logo-text-block {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .logo-brand-title {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 20px;
-            font-weight: 800;
-            color: var(--navy);
-            line-height: 1.1;
-            letter-spacing: 0.02em;
-        }
-
-        .logo-brand-title span.blue-part {
-            color: var(--electric-blue);
-        }
-
-        .logo-brand-sub {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 9.5px;
-            font-weight: 700;
-            color: var(--charcoal);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 2px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text-dark);
-            transition: 0.3s;
-            position: relative;
-        }
-
-        .nav-links a:not(.btn):hover {
-            color: var(--electric-blue);
-        }
-
-        .mobile-menu {
-            display: none;
-            font-size: 26px;
-            color: var(--navy);
-            cursor: pointer;
-        }
-
-
-        /* =========================
-           HERO SECTION
-        ========================= */
-
-        .hero {
-            min-height: 660px;
-            display: flex;
-            align-items: center;
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(255, 255, 255, 0.98) 0%,
-                    rgba(255, 255, 255, 0.94) 48%,
-                    rgba(255, 255, 255, 0.4) 100%
-                ),
-                url("assets/images/hero-solar.jpg");
-            background-size: cover;
-            background-position: center;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .hero-content {
-            max-width: 720px;
-            padding: 40px 0;
-        }
-
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--electric-light);
-            color: var(--electric-blue);
-            padding: 8px 16px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 800;
-            margin-bottom: 22px;
-            font-family: 'JetBrains Mono', monospace;
-            border: 1px solid rgba(21, 111, 232, 0.2);
-        }
-
-        .hero h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 58px;
-            line-height: 1.12;
-            margin-bottom: 22px;
-            color: var(--navy);
-            font-weight: 800;
-            letter-spacing: -0.025em;
-        }
-
-        .hero h1 span.highlight {
-            color: var(--electric-blue);
-        }
-
-        .hero p {
-            font-size: 18.5px;
-            color: var(--text-muted);
-            max-width: 640px;
-            margin-bottom: 32px;
-            line-height: 1.75;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
-
-
-        /* =========================
-           STATS
-        ========================= */
-
-        .stats {
-            background: linear-gradient(135deg, var(--navy) 0%, #133261 100%);
-            color: var(--white);
-            padding: 38px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            text-align: center;
-        }
-
-        .stat {
-            border-right: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 0 15px;
-        }
-
-        .stat:last-child {
-            border-right: none;
-        }
-
-        .stat h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 34px;
-            font-weight: 800;
-            color: #38bdf8;
-        }
-
-        .stat p {
-            color: #cbd5e1;
-            font-size: 14.5px;
-            margin-top: 4px;
-            font-weight: 500;
-        }
-
-
-        /* =========================
-           SERVICES (WHITE & CLEAN)
-        ========================= */
-
-        .services {
-            padding: 95px 0;
-            background: var(--white);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-
-        .service-card {
-            padding: 34px 28px;
-            background: var(--white);
-            border: 1.5px solid var(--border);
-            border-radius: 16px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--electric-blue);
-        }
-
-        .service-icon {
-            width: 58px;
-            height: 58px;
-            background: var(--electric-light);
-            color: var(--electric-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            font-size: 24px;
-            margin-bottom: 22px;
-            transition: 0.3s;
-        }
-
-        .service-card:hover .service-icon {
-            background: var(--electric-blue);
-            color: var(--white);
-        }
-
-        .service-card h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 20px;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 12px;
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 14.5px;
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           SOLAR SYSTEMS (LIGHT THEME)
-        ========================= */
-
-        .solar-systems {
-            padding: 95px 0;
-            background: var(--surface-light);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .solar-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-        }
-
-        .solar-card {
-            background: var(--white);
-            border-radius: 18px;
-            overflow: hidden;
-            border: 1.5px solid var(--border);
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .solar-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--electric-blue);
-        }
-
-        .solar-image {
-            height: 220px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .on-grid {
-            background-image: url("assets/images/on-grid.jpg");
-        }
-
-        .off-grid {
-            background-image: url("assets/images/off-grid.jpg");
-        }
-
-        .hybrid {
-            background-image: url("assets/images/hybrid.jpg");
-        }
-
-        .solar-content {
-            padding: 30px 25px;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .solar-content h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 23px;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 10px;
-        }
-
-        .solar-content p {
-            color: var(--text-muted);
-            font-size: 14.5px;
-            line-height: 1.7;
-            margin-bottom: 22px;
-            flex-grow: 1;
-        }
-
-        .price {
-            color: var(--electric-blue);
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 22px;
-            font-weight: 800;
-            margin-bottom: 22px;
-            display: flex;
-            align-items: baseline;
-            gap: 8px;
-        }
-
-        .price small {
-            color: var(--text-muted);
-            font-size: 13px;
-            font-weight: 500;
-        }
-
-
-        /* =========================
-           SOLAR BRANDS
-        ========================= */
-
-        .brands {
-            padding: 85px 0;
-            background: var(--white);
-        }
-
-        .brand-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 18px;
-        }
-
-        .brand {
-            border: 1.5px solid var(--border);
-            padding: 26px 15px;
-            border-radius: 12px;
-            text-align: center;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-weight: 800;
-            font-size: 16px;
-            color: var(--navy);
-            background: var(--white);
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .brand:hover {
-            border-color: var(--electric-blue);
-            color: var(--electric-blue);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
-
-
-        /* =========================
-           WHY ELECTROWERK
-        ========================= */
-
-        .why-us {
-            padding: 95px 0;
-            background: var(--surface-light);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .why-image {
-            height: 500px;
-            border-radius: 20px;
-            background:
-                linear-gradient(rgba(15, 34, 63, 0.2), rgba(15, 34, 63, 0.2)),
-                url("assets/images/solar-engineer.jpg");
-            background-size: cover;
-            background-position: center;
-            border: 1.5px solid var(--border);
-            box-shadow: var(--shadow-md);
-        }
-
-        .why-list {
-            margin-top: 28px;
-        }
-
-        .why-item {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 22px;
-        }
-
-        .check {
-            width: 34px;
-            height: 34px;
-            min-width: 34px;
-            border-radius: 50%;
-            background: var(--electric-light);
-            color: var(--electric-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            margin-top: 2px;
-        }
-
-        .why-item h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 800;
-            color: var(--navy);
-            margin-bottom: 4px;
-        }
-
-        .why-item p {
-            color: var(--text-muted);
-            font-size: 14.5px;
-            line-height: 1.65;
-        }
-
-
-        /* =========================
-           QUOTATION (LIGHT THEME WITH NAVY ACCENT)
-        ========================= */
-
-        .quotation {
-            padding: 95px 0;
-            background: var(--white);
-        }
-
-        .quote-box {
-            background: linear-gradient(135deg, var(--navy) 0%, #10264d 100%);
-            color: var(--white);
-            border-radius: 24px;
-            padding: 55px;
-            display: grid;
-            grid-template-columns: 0.85fr 1.15fr;
-            gap: 55px;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .quote-text h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 40px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin: 12px 0 16px;
-            color: var(--white);
-        }
-
-        .quote-text p {
-            color: #cbd5e1;
-            line-height: 1.75;
-            font-size: 16px;
-        }
-
-        .contact-detail {
-            margin-top: 35px;
-        }
-
-        .contact-detail div {
-            margin: 16px 0;
-            display: flex;
-            gap: 14px;
-            align-items: center;
-            font-size: 15.5px;
-        }
-
-        .contact-detail i {
-            color: #38bdf8;
-            font-size: 18px;
-        }
-
-        .quote-form {
-            background: var(--white);
-            padding: 35px;
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        .form-group {
-            margin-bottom: 16px;
-        }
-
-        .form-group.full {
-            grid-column: 1 / -1;
-        }
-
-        label {
-            display: block;
-            color: var(--navy);
-            font-size: 13.5px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-
-        input,
-        select,
-        textarea {
-            width: 100%;
-            padding: 13px 15px;
-            border: 1.5px solid var(--border);
-            border-radius: 8px;
-            font-family: inherit;
-            outline: none;
-            font-size: 14.5px;
-            color: var(--text-dark);
-            background: var(--surface-light);
-            transition: 0.3s;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: var(--electric-blue);
-            background: var(--white);
-            box-shadow: 0 0 0 3px rgba(21, 111, 232, 0.15);
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 105px;
-        }
-
-        .quote-form button {
-            width: 100%;
-            padding: 16px;
-            font-size: 16px;
-        }
-
-
-        /* =========================
-           FOOTER (CLEAN LIGHT/WHITE)
-        ========================= */
-
-        footer {
-            background: #f8fafc;
-            padding: 70px 0 25px;
-            border-top: 1px solid var(--border);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 45px;
-            margin-bottom: 45px;
-        }
-
-        .footer-col h3 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            margin-bottom: 20px;
-            font-size: 17px;
-            font-weight: 800;
-            color: var(--navy);
-        }
-
-        .footer-col p {
-            color: var(--text-muted);
-            font-size: 14.5px;
-            line-height: 1.75;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 11px;
-            color: var(--text-muted);
-            font-size: 14.5px;
-        }
-
-        .footer-links a:hover {
-            color: var(--electric-blue);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid var(--border);
-            padding-top: 25px;
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 13.5px;
-        }
-
-
-        /* =========================
-           WHATSAPP FLOATING BUTTON
-        ========================= */
-
-        .whatsapp {
-            position: fixed;
-            right: 25px;
-            bottom: 25px;
-            width: 58px;
-            height: 58px;
-            background: #25d366;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            z-index: 2000;
-            box-shadow: 0 6px 22px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .whatsapp:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
-            color: white;
-        }
-
-
-        /* =========================
-           RESPONSIVE
-        ========================= */
-
-        @media(max-width: 1000px) {
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .solar-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .brand-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .hero h1 {
-                font-size: 48px;
-            }
-        }
-
-
-        @media(max-width: 700px) {
-
-            .top-left {
-                display: none;
-            }
-
-            .top-inner {
-                justify-content: center;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu {
-                display: block;
-            }
-
-            .hero {
-                min-height: 580px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 25px;
-            }
-
-            .stat {
-                border: none;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .brand-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .why-image {
-                height: 350px;
-            }
-
-            .quote-box {
-                grid-template-columns: 1fr;
-                padding: 35px 22px;
-            }
-
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .form-group.full {
-                grid-column: auto;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-title h2 {
-                font-size: 30px;
-            }
-        }
-
-    </style>
+    <!-- Master CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-
 
 <body>
 
-
 <!-- =========================
-     TOP BAR
+     TOP ANNOUNCEMENT BAR
 ========================= -->
-
 <div class="top-bar">
-
     <div class="container top-inner">
-
         <div class="top-left">
-
             <span>
                 <i class="fas fa-phone"></i>
                 <a href="tel:+923216875494">+92 321 6875494</a>
             </span>
-
             <span>
                 <i class="fas fa-location-dot"></i>
-                Bahria Town, Lahore, Pakistan
+                Office 31CC, Bahria Town, Lahore, Pakistan
             </span>
-
         </div>
-
         <div class="top-right">
-
             <span>
                 <i class="fas fa-bolt"></i>
-                Solar EPC & Electrical Engineering
+                Solar EPC • Electrical Engineering • Security Automation
             </span>
-
         </div>
-
     </div>
-
 </div>
 
-
-
 <!-- =========================
-     NAVIGATION (LOGO INTEGRATED)
+     NAVIGATION HEADER
 ========================= -->
-
-<nav>
-
+<nav class="site-header">
     <div class="container nav-inner">
-
-        <a href="#" class="logo">
-
+        <a href="index.html" class="logo">
             <div class="logo-img-wrapper">
                 <img src="assets/images/logo.png" alt="Electrowerk Technologies EW Logo">
             </div>
-
             <div class="logo-text-block">
                 <div class="logo-brand-title">
                     ELECTRO<span class="blue-part">WERK</span>
@@ -1054,804 +71,474 @@
                     TECHNOLOGIES
                 </div>
             </div>
-
         </a>
 
-
         <div class="nav-links">
-
-            <a href="#home">Home</a>
-
-            <a href="#services">Services</a>
-
-            <a href="#solar">Solar Systems</a>
-
-            <a href="#brands">Brands</a>
-
-            <a href="#about">About</a>
-
-            <a href="#quotation" class="btn btn-primary">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="solar-systems.html">Solar Systems</a>
+            <a href="products-brands.html">Products & Brands</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="btn btn-primary btn-sm">
                 <i class="fas fa-file-invoice"></i> Get Quotation
             </a>
-
         </div>
-
 
         <div class="mobile-menu">
             <i class="fas fa-bars"></i>
         </div>
-
     </div>
-
 </nav>
 
-
-
 <!-- =========================
-     HERO
+     HERO SECTION
 ========================= -->
-
-<section class="hero" id="home">
-
+<section class="hero">
     <div class="container">
-
         <div class="hero-content">
-
             <span class="hero-badge">
-                <i class="fas fa-bolt"></i>
-                POWERING A SMARTER FUTURE
+                <i class="fas fa-bolt"></i> POWERING A SMARTER FUTURE
             </span>
-
             <h1>
                 Clean Energy.
                 <span class="highlight">Smart Engineering.</span>
             </h1>
-
             <p>
-                Electrowerk Technologies delivers reliable solar energy,
-                electrical engineering, automation and smart renewable
-                solutions for residential, commercial and industrial projects across Pakistan.
+                Electrowerk Technologies delivers reliable solar EPC, CCTV security surveillance, electric safety fencing, and residential, commercial & industrial electrical engineering solutions across Pakistan.
             </p>
-
-
             <div class="hero-buttons">
-
-                <a href="#quotation" class="btn btn-primary">
-                    <i class="fas fa-file-invoice"></i>
-                    Get Free Quotation
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-file-invoice"></i> Get Free Quotation
                 </a>
-
+                <a href="services.html" class="btn btn-outline">
+                    <i class="fas fa-compass-drafting"></i> Explore Services
+                </a>
                 <a href="tel:+923216875494" class="btn btn-navy">
-                    <i class="fas fa-phone"></i>
-                    +92 321 6875494
+                    <i class="fas fa-phone"></i> +92 321 6875494
                 </a>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- =========================
-     STATS
+     STATS BAR
 ========================= -->
-
 <section class="stats">
-
     <div class="container stats-grid">
-
         <div class="stat">
             <h3>25+</h3>
-            <p>Turnkey Projects</p>
+            <p>Turnkey Projects Completed</p>
         </div>
-
         <div class="stat">
             <h3>100%</h3>
-            <p>Engineering Standards</p>
+            <p>Engineering & Safety Standards</p>
         </div>
-
         <div class="stat">
             <h3>24/7</h3>
-            <p>Technical Support</p>
+            <p>Technical Monitoring & Support</p>
         </div>
-
         <div class="stat">
             <h3>PKR</h3>
-            <p>Transparent Pricing</p>
+            <p>Transparent Turnkey Pricing</p>
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- =========================
-     SERVICES
+     CORE ENGINEERING SOLUTIONS
 ========================= -->
-
-<section class="services" id="services">
-
+<section class="services-section">
     <div class="container">
-
         <div class="section-title">
-
-            <span>Our Expertise</span>
-
-            <h2>Engineering Solutions</h2>
-
+            <span class="tag">Engineering Capabilities</span>
+            <h2>Complete Engineering Solutions</h2>
             <p>
-                Complete electrical and renewable energy
-                solutions designed for high efficiency,
-                grid reliability and long-term performance.
+                From turnkey solar power generation and electrical distribution to advanced perimeter security and CCTV surveillance.
             </p>
-
         </div>
 
-
-        <div class="services-grid">
-
-
+        <div class="services-grid-3">
+            <!-- 1. Solar EPC -->
             <div class="service-card">
-
                 <div class="service-icon">
                     <i class="fas fa-solar-panel"></i>
                 </div>
-
-                <h3>Solar EPC</h3>
-
+                <h3>Solar EPC Solutions</h3>
                 <p>
-                    Turnkey solar engineering, procurement,
-                    net-metering and installation solutions from design
-                    to commissioning.
+                    Turnkey solar system design, procurement, NEPRA green meter Net-Metering approvals, L2/L3 structure fabrication, and commissioning.
                 </p>
-
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> On-Grid, Off-Grid & Smart Hybrid Topologies</li>
+                    <li><i class="fas fa-check"></i> Tier-1 N-Type TOPCon Panels & String Inverters</li>
+                    <li><i class="fas fa-check"></i> Up to 95% reduction in electricity bills</li>
+                </ul>
+                <a href="services.html#solar-epc" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
             </div>
 
-
+            <!-- 2. CCTV Monitoring -->
             <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-video"></i>
+                </div>
+                <h3>CCTV Monitoring & Security</h3>
+                <p>
+                    High-definition 4K IP security cameras, ColorVu night-vision surveillance, remote mobile live streaming, and smart NVR setups.
+                </p>
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> AI Human & Vehicle Motion Detection</li>
+                    <li><i class="fas fa-check"></i> 24/7 Full-Color Night Surveillance</li>
+                    <li><i class="fas fa-check"></i> Remote Access on iOS & Android Apps</li>
+                </ul>
+                <a href="services.html#cctv-monitoring" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
+            <!-- 3. Residential & Commercial Electrical -->
+            <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-bolt"></i>
                 </div>
-
                 <h3>Electrical Engineering</h3>
-
                 <p>
-                    Electrical design, protection systems,
-                    distribution panels, and industrial
-                    power solutions.
+                    Professional residential house wiring, commercial distribution boards (DBs), earthing bores, and industrial power management.
                 </p>
-
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> Load Balancing & Single Line Diagrams (SLD)</li>
+                    <li><i class="fas fa-check"></i> Certified Copper Earthing & Surge Arrestors</li>
+                    <li><i class="fas fa-check"></i> Schneider / ABB / Terasaki Breaker Panels</li>
+                </ul>
+                <a href="services.html#electrical-engineering" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
             </div>
 
-
+            <!-- 4. Electric Safety Fence -->
             <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-halved"></i>
+                </div>
+                <h3>Electric Safety Fence</h3>
+                <p>
+                    High-voltage non-lethal perimeter security electric fencing for villas, farmhouses, warehouses, and industrial plants.
+                </p>
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> High Voltage Pulsed Security Shock (Non-Lethal)</li>
+                    <li><i class="fas fa-check"></i> Anti-Tamper Cut & Short Alarm Sirens</li>
+                    <li><i class="fas fa-check"></i> Battery Backup Energizer Systems</li>
+                </ul>
+                <a href="services.html#electric-fence" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
 
+            <!-- 5. Industrial Automation -->
+            <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-microchip"></i>
                 </div>
-
                 <h3>Industrial Automation</h3>
-
                 <p>
-                    PLC, HMI, SCADA telemetry, control panels,
-                    and automated monitoring infrastructure.
+                    PLC & HMI programming, Motor Control Centers (MCC), Automatic Transfer Switches (ATS / AMF), and SCADA telemetry.
                 </p>
-
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> Automated Generator / Grid Changeovers</li>
+                    <li><i class="fas fa-check"></i> Industrial Sensor & Relay Integration</li>
+                    <li><i class="fas fa-check"></i> Remote Plant Telemetry Dashboards</li>
+                </ul>
+                <a href="services.html#industrial-automation" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
             </div>
 
-
+            <!-- 6. Energy Storage & BESS -->
             <div class="service-card">
-
                 <div class="service-icon">
                     <i class="fas fa-battery-full"></i>
                 </div>
-
-                <h3>Energy Storage</h3>
-
+                <h3>Energy Storage (BESS)</h3>
                 <p>
-                    Lithium battery storage solutions for zero-blackout
-                    backup, peak shaving, and optimized
-                    solar utilization.
+                    Lithium Iron Phosphate (LiFePO4) battery storage systems for zero-interruption backup, peak shaving, and load shedding protection.
                 </p>
-
+                <ul class="service-bullets">
+                    <li><i class="fas fa-check"></i> 6000+ Cycle Life Lithium Batteries</li>
+                    <li><i class="fas fa-check"></i> Uninterruptible Power Supply (UPS) Failover</li>
+                    <li><i class="fas fa-check"></i> Smart Battery Management System (BMS)</li>
+                </ul>
+                <a href="services.html#energy-storage" class="btn btn-outline btn-sm btn-block">Learn More <i class="fas fa-arrow-right"></i></a>
             </div>
-
-
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- =========================
-     SOLAR SYSTEMS
+     SOLAR SYSTEMS PREVIEW
 ========================= -->
-
-<section class="solar-systems" id="solar">
-
+<section class="solar-systems-section">
     <div class="container">
-
         <div class="section-title">
-
-            <span>Solar Solutions</span>
-
-            <h2>Choose Your Solar System</h2>
-
+            <span class="tag">Solar System Types</span>
+            <h2>Choose Your Solar Solution</h2>
             <p>
-                Select the system topology that matches your energy
-                requirements, load profile, and budget.
+                Tailored solar topologies designed for maximum savings, uninterrupted backup, and fast return on investment.
             </p>
-
         </div>
-
 
         <div class="solar-grid">
-
-
             <!-- ON GRID -->
-
             <div class="solar-card">
-
                 <div class="solar-image on-grid"></div>
-
                 <div class="solar-content">
-
-                    <h3>
-                        On-Grid Solar
-                    </h3>
-
+                    <h3>On-Grid Solar</h3>
                     <p>
-                        Ideal for homes and commercial facilities looking
-                        to eliminate high electricity bills using
-                        grid-connected net-metered solar power.
+                        Grid-tied system with NEPRA green net-metering. Exports excess power to the national grid and slashes daytime utility bills.
                     </p>
-
                     <div class="price">
-                        ₨ 350,000+
-                        <small>Starting Price</small>
+                        ₨ 350,000+ <small>Starting Price</small>
                     </div>
-
-                    <a href="#quotation" class="btn btn-primary">
-                        Get Quote
-                    </a>
-
+                    <a href="solar-systems.html#on-grid" class="btn btn-primary btn-block">View System Details</a>
                 </div>
-
             </div>
-
-
 
             <!-- OFF GRID -->
-
             <div class="solar-card">
-
                 <div class="solar-image off-grid"></div>
-
                 <div class="solar-content">
-
-                    <h3>
-                        Off-Grid Solar
-                    </h3>
-
+                    <h3>Off-Grid Solar</h3>
                     <p>
-                        Independent solar power system with
-                        high-capacity battery storage for remote locations requiring
-                        100% energy independence.
+                        100% energy independence with dedicated battery storage for remote locations, farmhouses, and areas without stable grid access.
                     </p>
-
                     <div class="price">
-                        ₨ 650,000+
-                        <small>Starting Price</small>
+                        ₨ 650,000+ <small>Starting Price</small>
                     </div>
-
-                    <a href="#quotation" class="btn btn-primary">
-                        Get Quote
-                    </a>
-
+                    <a href="solar-systems.html#off-grid" class="btn btn-primary btn-block">View System Details</a>
                 </div>
-
             </div>
-
-
 
             <!-- HYBRID -->
-
             <div class="solar-card">
-
                 <div class="solar-image hybrid"></div>
-
                 <div class="solar-content">
-
-                    <h3>
-                        Hybrid Solar
-                    </h3>
-
+                    <h3>Hybrid Solar</h3>
                     <p>
-                        Smart combination of solar generation, grid connectivity,
-                        and battery backup for uninterrupted power
-                        and maximum financial savings.
+                        The ultimate combination of solar generation, battery backup, and grid connectivity with automatic zero-blackout failover.
                     </p>
-
                     <div class="price">
-                        ₨ 750,000+
-                        <small>Starting Price</small>
+                        ₨ 750,000+ <small>Starting Price</small>
                     </div>
-
-                    <a href="#quotation" class="btn btn-primary">
-                        Get Quote
-                    </a>
-
+                    <a href="solar-systems.html#hybrid" class="btn btn-primary btn-block">View System Details</a>
                 </div>
-
             </div>
-
-
         </div>
-
     </div>
-
 </section>
-
-
 
 <!-- =========================
-     SOLAR BRANDS
+     TRUSTED BRANDS STRIP
 ========================= -->
-
-<section class="brands" id="brands">
-
+<section class="services-section">
     <div class="container">
-
         <div class="section-title">
-
-            <span>Technology Partners</span>
-
-            <h2>Premium Solar Brands</h2>
-
+            <span class="tag">Equipment Partners</span>
+            <h2>Common Brands Used in Pakistan</h2>
             <p>
-                We design systems using globally recognized
-                Tier-1 solar panel, inverter, and battery technologies.
+                We engineer our systems using genuine Tier-1 solar panels, inverters, circuit breakers, mounting structures, and security hardware.
             </p>
-
         </div>
 
-
-        <div class="brand-grid">
-
-            <div class="brand">
-                LONGi
+        <div class="brand-catalog-grid">
+            <div class="product-brand-card">
+                <div class="brand-name">LONGi Solar</div>
+                <span class="brand-badge">Solar Panels</span>
+                <p class="brand-specs">Hi-MO 6 & Hi-MO X6 Tier-1 N-Type TOPCon 580W-600W high-efficiency modules.</p>
             </div>
-
-            <div class="brand">
-                Jinko Solar
+            <div class="product-brand-card">
+                <div class="brand-name">Jinko Solar</div>
+                <span class="brand-badge">Solar Panels</span>
+                <p class="brand-specs">Tiger Neo N-Type TOPCon 585W-620W with ultra-low thermal degradation.</p>
             </div>
-
-            <div class="brand">
-                JA Solar
+            <div class="product-brand-card">
+                <div class="brand-name">Huawei FusionSolar</div>
+                <span class="brand-badge">Smart Inverters</span>
+                <p class="brand-specs">Tier-1 On-Grid inverters (5kW - 100kW+) with AI Arc Fault Circuit Interrupter (AFCI).</p>
             </div>
-
-            <div class="brand">
-                Canadian Solar
+            <div class="product-brand-card">
+                <div class="brand-name">Inverex / Nitrox</div>
+                <span class="brand-badge">Hybrid Inverters</span>
+                <p class="brand-specs">Nitrox & Veyron hybrid inverters widely deployed across Pakistani residential sites.</p>
             </div>
-
-            <div class="brand">
-                Trina Solar
+            <div class="product-brand-card">
+                <div class="brand-name">Schneider Electric</div>
+                <span class="brand-badge">Breakers & DBs</span>
+                <p class="brand-specs">Certified DC MCBs, MCCBs, Surge Protective Devices (SPDs), and Distribution Boards.</p>
             </div>
-
-            <div class="brand">
-                Huawei
+            <div class="product-brand-card">
+                <div class="brand-name">Pakistan Cables / Fast</div>
+                <span class="brand-badge">Copper Cables</span>
+                <p class="brand-specs">99.99% pure copper DC/AC cables, single-core XLPE UV-resistant solar wires.</p>
             </div>
-
-            <div class="brand">
-                GoodWe
+            <div class="product-brand-card">
+                <div class="brand-name">L2 / L3 Galvanized</div>
+                <span class="brand-badge">Mounting Structures</span>
+                <p class="brand-specs">Hot-dip galvanized iron (GI) 12/14 gauge structures & elevated rooftop frames.</p>
             </div>
-
-            <div class="brand">
-                Growatt
+            <div class="product-brand-card">
+                <div class="brand-name">Hikvision & Dahua</div>
+                <span class="brand-badge">CCTV Security</span>
+                <p class="brand-specs">4K ColorVu IP cameras, AcuSense AI human detection, and smart network DVRs.</p>
             </div>
-
-            <div class="brand">
-                Sungrow
-            </div>
-
-            <div class="brand">
-                Solis
-            </div>
-
         </div>
 
+        <div style="text-align:center; margin-top:35px;">
+            <a href="products-brands.html" class="btn btn-outline">
+                <i class="fas fa-list-check"></i> View Full Brands & Component Catalogue
+            </a>
+        </div>
     </div>
-
 </section>
-
-
 
 <!-- =========================
      WHY ELECTROWERK
 ========================= -->
-
-<section class="why-us" id="about">
-
+<section class="why-us-section">
     <div class="container why-grid">
-
-
         <div class="why-image"></div>
-
-
         <div>
-
-            <div class="section-title" style="text-align:left;margin-bottom:20px;">
-
-                <span>Why Electrowerk</span>
-
-                <h2>
-                    Engineering Beyond Installation
-                </h2>
-
+            <div class="section-title text-left">
+                <span class="tag">Why Electrowerk</span>
+                <h2>Engineering Beyond Installation</h2>
                 <p>
-                    We prioritize rigorous engineering standards,
-                    structural safety, and long-term
-                    photovoltaic yield performance.
+                    We focus on structural integrity, precision load calculations, and long-term electrical safety.
                 </p>
-
             </div>
-
 
             <div class="why-list">
-
-
                 <div class="why-item">
-
-                    <div class="check">
-                        <i class="fas fa-check"></i>
-                    </div>
-
+                    <div class="check"><i class="fas fa-check"></i></div>
                     <div>
-
-                        <h3>
-                            Professional Engineering
-                        </h3>
-
-                        <p>
-                            Accurate load calculations, 3D shadow analysis,
-                            electrical protection, and single-line diagrams.
-                        </p>
-
+                        <h3>Professional Engineering Design</h3>
+                        <p>Detailed Single-Line Diagrams (SLD), 3D PVsyst shadow simulations, and earthing calculations.</p>
                     </div>
-
                 </div>
-
-
                 <div class="why-item">
-
-                    <div class="check">
-                        <i class="fas fa-check"></i>
-                    </div>
-
+                    <div class="check"><i class="fas fa-check"></i></div>
                     <div>
-
-                        <h3>
-                            Tier-1 Equipment
-                        </h3>
-
-                        <p>
-                            Tier-1 BloombergNEF rated solar panels, high-yield inverters,
-                            and heavy-duty mounting structures.
-                        </p>
-
+                        <h3>Certified Tier-1 Equipment</h3>
+                        <p>Genuine Tier-1 panels, inverters with manufacturer warranties, and heavy-gauge mounting hardware.</p>
                     </div>
-
                 </div>
-
-
                 <div class="why-item">
-
-                    <div class="check">
-                        <i class="fas fa-check"></i>
-                    </div>
-
+                    <div class="check"><i class="fas fa-check"></i></div>
                     <div>
-
-                        <h3>
-                            Transparent PKR Pricing
-                        </h3>
-
-                        <p>
-                            Itemized turnkey quotations with complete equipment specs
-                            and zero hidden costs.
-                        </p>
-
+                        <h3>Transparent PKR Turnkey Pricing</h3>
+                        <p>Detailed cost breakdown in PKR with zero hidden fees and full Net-Metering assistance.</p>
                     </div>
-
                 </div>
-
-
                 <div class="why-item">
-
-                    <div class="check">
-                        <i class="fas fa-check"></i>
-                    </div>
-
+                    <div class="check"><i class="fas fa-check"></i></div>
                     <div>
-
-                        <h3>
-                            After-Sales & Net-Metering
-                        </h3>
-
-                        <p>
-                            Complete assistance with NEPRA green meter approvals
-                            and preventive maintenance support.
-                        </p>
-
+                        <h3>After-Sales & Technical Support</h3>
+                        <p>Dedicated engineers for rapid maintenance, solar panel washing, and telemetry monitoring.</p>
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- =========================
-     QUOTATION
+     QUOTATION SECTION
 ========================= -->
-
-<section class="quotation" id="quotation">
-
+<section class="quotation-section" id="quotation">
     <div class="container">
-
         <div class="quote-box">
-
-
             <div class="quote-text">
-
                 <span style="color:#38bdf8; font-weight:800; font-family:'JetBrains Mono', monospace; font-size:13px; letter-spacing:1.5px;">
                     GET STARTED
                 </span>
-
-                <h2>
-                    Get Your Solar Quotation
-                </h2>
-
+                <h2>Get Your Free Quotation</h2>
                 <p>
-                    Tell us about your project requirements and our
-                    engineering team will prepare a customized
-                    solar solution and quotation in PKR.
+                    Tell us about your solar or electrical project requirements and our engineering team in Lahore will prepare a detailed technical proposal in PKR.
                 </p>
-
-
                 <div class="contact-detail">
-
                     <div>
                         <i class="fas fa-phone"></i>
                         <span>+92 321 6875494</span>
                     </div>
-
                     <div>
                         <i class="fab fa-whatsapp" style="color:#25d366;"></i>
-                        <span>WhatsApp Inquiries Available</span>
+                        <span>Instant WhatsApp Assistance</span>
                     </div>
-
                     <div>
                         <i class="fas fa-location-dot"></i>
-                        <span>
-                            Office 31CC, Bahria Town,
-                            Lahore, Pakistan
-                        </span>
+                        <span>Office 31CC, Bahria Town, Lahore, Pakistan</span>
                     </div>
-
                 </div>
-
             </div>
 
-
-
-            <!-- FORM -->
-
+            <!-- Form -->
             <form class="quote-form" id="quoteForm">
-
                 <div class="form-grid">
-
-
                     <div class="form-group">
-
-                        <label>
-                            Full Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="e.g. Ali Ahmed Khan"
-                            required>
-
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="e.g. Muhammad Usman" required>
                     </div>
-
-
                     <div class="form-group">
-
-                        <label>
-                            Phone Number
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            placeholder="+92 300 1234567"
-                            required>
-
+                        <label for="phone">Phone / WhatsApp *</label>
+                        <input type="tel" id="phone" placeholder="+92 300 1234567" required>
                     </div>
-
-
                     <div class="form-group">
-
-                        <label>
-                            System Type
-                        </label>
-
+                        <label for="system">Required Service *</label>
                         <select id="system">
-
-                            <option>
-                                On-Grid Solar System
-                            </option>
-
-                            <option>
-                                Off-Grid Solar System
-                            </option>
-
-                            <option>
-                                Hybrid Solar System
-                            </option>
-
+                            <option value="On-Grid Solar System">On-Grid Solar System (Net-Metering)</option>
+                            <option value="Hybrid Solar System">Hybrid Solar System (Battery + Grid)</option>
+                            <option value="Off-Grid Solar System">Off-Grid Solar System</option>
+                            <option value="CCTV Surveillance System">CCTV Monitoring & Surveillance</option>
+                            <option value="Electric Safety Fence">Electric Safety Fence</option>
+                            <option value="Residential Electrical Wiring">Residential / Commercial Electrical</option>
+                            <option value="Industrial Automation">Industrial Automation & Switchgear</option>
                         </select>
-
                     </div>
-
-
                     <div class="form-group">
-
-                        <label>
-                            Required Capacity
-                        </label>
-
+                        <label for="capacity">Required Capacity / Size</label>
                         <select id="capacity">
-
-                            <option>
-                                Not Sure (Free Energy Audit)
-                            </option>
-
-                            <option>
-                                3 kW System
-                            </option>
-
-                            <option>
-                                5 kW System
-                            </option>
-
-                            <option>
-                                8 kW System
-                            </option>
-
-                            <option>
-                                10 kW System
-                            </option>
-
-                            <option>
-                                15 kW System
-                            </option>
-
-                            <option>
-                                20 kW+ System
-                            </option>
-
+                            <option value="Not Sure (Need Free Audit)">Not Sure (Need Free Site Survey)</option>
+                            <option value="3 kW System">3 kW System (Small Home)</option>
+                            <option value="5 kW System">5 kW System (Standard Home)</option>
+                            <option value="10 kW System">10 kW System (1 Kanal / Commercial)</option>
+                            <option value="15 kW System">15 kW System (Large Villa)</option>
+                            <option value="20 kW+ Commercial/Industrial">20 kW+ Commercial / Factory</option>
                         </select>
-
                     </div>
-
-
                     <div class="form-group full">
-
-                        <label>
-                            Estimated Budget (PKR)
-                        </label>
-
+                        <label for="budget">Estimated Budget (PKR)</label>
                         <select id="budget">
-
-                            <option>
-                                Below ₨ 500,000
-                            </option>
-
-                            <option>
-                                ₨ 500,000 - ₨ 1,000,000
-                            </option>
-
-                            <option>
-                                ₨ 1,000,000 - ₨ 2,000,000
-                            </option>
-
-                            <option>
-                                ₨ 2,000,000+
-                            </option>
-
+                            <option value="Below ₨ 500,000">Below ₨ 500,000</option>
+                            <option value="₨ 500,000 - ₨ 1,000,000">₨ 500,000 - ₨ 1,000,000</option>
+                            <option value="₨ 1,000,000 - ₨ 2,500,000">₨ 1,000,000 - ₨ 2,500,000</option>
+                            <option value="₨ 2,500,000+">₨ 2,500,000+</option>
                         </select>
-
                     </div>
-
-
                     <div class="form-group full">
-
-                        <label>
-                            Project Details & Electricity Usage
-                        </label>
-
-                        <textarea
-                            id="details"
-                            placeholder="Tell us about your monthly electricity bill, roof area, location, or specific requirements..."></textarea>
-
+                        <label for="details">Project Details & Requirements</label>
+                        <textarea id="details" placeholder="Describe your monthly electricity bill, roof area, location, camera points, or electric fence perimeter length..."></textarea>
                     </div>
-
-
                     <div class="form-group full">
-
-                        <button
-                            type="submit"
-                            class="btn btn-primary">
-
-                            <i class="fab fa-whatsapp"></i>
-                            Request Quotation on WhatsApp
-
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Request Quotation on WhatsApp
                         </button>
-
                     </div>
-
-
                 </div>
-
             </form>
-
-
         </div>
-
     </div>
-
 </section>
 
-
-
 <!-- =========================
-     FOOTER
+     SITE FOOTER
 ========================= -->
-
-<footer>
-
+<footer class="site-footer">
     <div class="container">
-
-
         <div class="footer-grid">
-
-
             <div class="footer-col">
-
-                <a href="#" class="logo" style="margin-bottom:15px;">
-
+                <a href="index.html" class="logo" style="margin-bottom:15px;">
                     <div class="logo-img-wrapper" style="height:44px;">
                         <img src="assets/images/logo.png" alt="Electrowerk Technologies Logo" style="height:40px;">
                     </div>
-
                     <div class="logo-text-block">
                         <div class="logo-brand-title" style="font-size:18px;">
                             ELECTRO<span class="blue-part">WERK</span>
@@ -1860,244 +547,60 @@
                             TECHNOLOGIES
                         </div>
                     </div>
-
                 </a>
-
                 <p>
-                    Solar EPC, Electrical Engineering,
-                    Industrial Automation and Renewable
-                    Energy Solutions across Pakistan.
+                    Solar EPC, CCTV Surveillance, Electric Safety Fencing, Electrical Engineering, and Industrial Automation across Pakistan.
                 </p>
-
             </div>
-
-
 
             <div class="footer-col">
-
-                <h3>Services</h3>
-
+                <h3>Engineering Services</h3>
                 <ul class="footer-links">
-
-                    <li>
-                        <a href="#services">
-                            Solar EPC
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#services">
-                            Electrical Engineering
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#services">
-                            Industrial Automation
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#services">
-                            Energy Storage
-                        </a>
-                    </li>
-
+                    <li><a href="services.html#solar-epc">Solar EPC Solutions</a></li>
+                    <li><a href="services.html#cctv-monitoring">CCTV Surveillance</a></li>
+                    <li><a href="services.html#electrical-engineering">Electrical Engineering</a></li>
+                    <li><a href="services.html#electric-fence">Electric Safety Fence</a></li>
+                    <li><a href="services.html#industrial-automation">Industrial Automation</a></li>
+                    <li><a href="services.html#energy-storage">Energy Storage (BESS)</a></li>
                 </ul>
-
             </div>
-
-
 
             <div class="footer-col">
-
-                <h3>Solar</h3>
-
+                <h3>Solar Solutions</h3>
                 <ul class="footer-links">
-
-                    <li>
-                        <a href="#solar">
-                            On-Grid Solar
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#solar">
-                            Off-Grid Solar
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#solar">
-                            Hybrid Solar
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#quotation">
-                            Solar Quotation
-                        </a>
-                    </li>
-
+                    <li><a href="solar-systems.html#on-grid">On-Grid Solar (Net-Metering)</a></li>
+                    <li><a href="solar-systems.html#off-grid">Off-Grid Solar Power</a></li>
+                    <li><a href="solar-systems.html#hybrid">Hybrid Solar Systems</a></li>
+                    <li><a href="products-brands.html">Brands & Components</a></li>
+                    <li><a href="projects.html">Featured Projects</a></li>
+                    <li><a href="contact.html">Request Site Survey</a></li>
                 </ul>
-
             </div>
-
-
 
             <div class="footer-col">
-
-                <h3>Contact</h3>
-
+                <h3>Contact Coordinates</h3>
                 <ul class="footer-links">
-
-                    <li>
-                        <i class="fas fa-phone" style="color:var(--electric-blue);"></i>
-                        +92 321 6875494
-                    </li>
-
-                    <li>
-                        <i class="fas fa-location-dot" style="color:var(--electric-blue);"></i>
-                        Office 31CC, Bahria Town
-                    </li>
-
-                    <li>
-                        Lahore, Pakistan
-                    </li>
-
+                    <li><i class="fas fa-phone" style="color:var(--electric-blue); margin-right:6px;"></i> +92 321 6875494</li>
+                    <li><i class="fas fa-location-dot" style="color:var(--electric-blue); margin-right:6px;"></i> Office 31CC, Bahria Town</li>
+                    <li>Lahore, Punjab, Pakistan</li>
+                    <li><i class="fas fa-envelope" style="color:var(--electric-blue); margin-right:6px;"></i> info@electrowerk.com</li>
                 </ul>
-
             </div>
-
-
         </div>
-
-
 
         <div class="footer-bottom">
-
-            © 2026 Electrowerk Technologies.
-            All Rights Reserved.
-
+            © 2026 Electrowerk Technologies. All Rights Reserved.
         </div>
-
-
     </div>
-
 </footer>
 
-
-
-<!-- =========================
-     WHATSAPP BUTTON
-========================= -->
-
-<a
-    href="https://wa.me/923216875494"
-    target="_blank"
-    class="whatsapp"
-    aria-label="WhatsApp">
-
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923216875494" target="_blank" class="whatsapp" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
-
 </a>
 
-
-
-<!-- =========================
-     JAVASCRIPT
-========================= -->
-
-<script>
-
-    document
-        .getElementById("quoteForm")
-        .addEventListener("submit", function(event) {
-
-            event.preventDefault();
-
-            const name =
-                document.getElementById("name").value;
-
-            const phone =
-                document.getElementById("phone").value;
-
-            const system =
-                document.getElementById("system").value;
-
-            const capacity =
-                document.getElementById("capacity").value;
-
-            const budget =
-                document.getElementById("budget").value;
-
-            const details =
-                document.getElementById("details").value;
-
-
-            const message =
-                `Hello Electrowerk Technologies,
-
-I would like to request a solar quotation.
-
-Name: ${name}
-Phone: ${phone}
-System Type: ${system}
-Required Capacity: ${capacity}
-Budget: ${budget}
-
-Project Details:
-${details}`;
-
-
-            const whatsappURL =
-                "https://wa.me/923216875494?text="
-                + encodeURIComponent(message);
-
-
-            window.open(
-                whatsappURL,
-                "_blank"
-            );
-
-        });
-
-
-    /* Mobile menu */
-
-    const mobileMenu =
-        document.querySelector(".mobile-menu");
-
-    const navLinks =
-        document.querySelector(".nav-links");
-
-
-    mobileMenu.addEventListener("click", function() {
-
-        if (navLinks.style.display === "flex") {
-
-            navLinks.style.display = "none";
-
-        } else {
-
-            navLinks.style.display = "flex";
-
-            navLinks.style.position = "absolute";
-            navLinks.style.top = "82px";
-            navLinks.style.left = "0";
-            navLinks.style.right = "0";
-            navLinks.style.background = "#ffffff";
-            navLinks.style.padding = "25px";
-            navLinks.style.flexDirection = "column";
-            navLinks.style.borderBottom = "1px solid #e2e8f0";
-            navLinks.style.boxShadow = "0 10px 25px rgba(15,34,63,0.1)";
-
-        }
-
-    });
-
-</script>
-
+<!-- Master Script -->
+<script src="js/app.js"></script>
 
 </body>
 </html>
